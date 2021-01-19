@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  jd_seckill:
+    image: registry.cn-zhangjiakou.aliyuncs.com/halmawork/jd_seckill:0.1.0
+    volumes:
+      - ./config.ini:/app/config.ini
