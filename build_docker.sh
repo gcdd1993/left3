@@ -1,3 +1,5 @@
 #!/bin/bash
-docker build . --tag registry.cn-zhangjiakou.aliyuncs.com/halmawork/jd_seckill:0.1.0
-docker push registry.cn-zhangjiakou.aliyuncs.com/halmawork/jd_seckill:0.1.0
+DOCKER_REGISTRY=registry.cn-zhangjiakou.aliyuncs.com/halmawork
+VERSION=0.1.1
+docker build . --tag ${DOCKER_REGISTRY}/jd_seckill:${VERSION}
+docker push ${DOCKER_REGISTRY}/jd_seckill:${VERSION}
